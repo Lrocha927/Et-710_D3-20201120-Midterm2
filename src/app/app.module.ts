@@ -16,6 +16,7 @@ import { ResumeWorkExperienceComponent } from './resume-work-experience/resume-w
 import { CartService } from './cart.service';
 import { CartComponent } from './cart/cart.component';
 import { ShippingComponent } from './shipping/shipping.component';
+import { GraphicDesignComponent } from './graphic-design/graphic-design.component';
 
 @NgModule({
   imports: [
@@ -28,6 +29,7 @@ import { ShippingComponent } from './shipping/shipping.component';
       { path: 'resume', component: MyResumeComponent },
       { path: 'cart', component: CartComponent },
       { path: 'shipping', component: ShippingComponent },
+      { path: 'graphic', component: GraphicDesignComponent },
     ])
   ],
   declarations: [
@@ -42,7 +44,8 @@ import { ShippingComponent } from './shipping/shipping.component';
     ResumeProfileComponent,
     ResumeWorkExperienceComponent,
     CartComponent,
-    ShippingComponent
+    ShippingComponent,
+    GraphicDesignComponent
   ],
   bootstrap: [ AppComponent ],
   providers: [CartService]
