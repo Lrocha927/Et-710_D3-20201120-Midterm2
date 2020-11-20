@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-
+import { HttpClient } from '@angular/common/http';
 @Injectable()
 export class CartService {
 items = [];
@@ -17,6 +17,14 @@ addToCart(product) {
     return this.items;
   }
 
-  constructor() { }
+
+
+ getShippingPrices() {
+    return this.http.get('/assets/shipping.json');
+  }
+  
+  constructor(
+    private http: HttpClient
+) { }
 
 }
